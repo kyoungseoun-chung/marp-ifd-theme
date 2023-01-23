@@ -1,0 +1,45 @@
+/* @theme marp_ifd_theme */
+@import 'default';
+
+section {
+  position: absolute;
+}
+
+section.title {
+  display: flex;
+  align-items: center;
+}
+
+section.title h1{
+  font-size: 2.2em;
+}
+
+section.title h2{
+  position: absolute;
+  right: 30px;
+  bottom: 150px;
+}
+
+header, footer {
+  all: unset;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  color: var(--header-footer-color);
+  font-size: 0.8em;
+}
+
+header .wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+header {
+  top: 21px;
+}
+
+footer {
+  bottom: 21px;
+  left: 1em;
+}

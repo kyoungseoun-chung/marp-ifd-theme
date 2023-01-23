@@ -1,0 +1,5 @@
+{
+    "markdown.marp.themes": [
+        "./theme/marp_ifd_theme.css"
+    ]
+}
