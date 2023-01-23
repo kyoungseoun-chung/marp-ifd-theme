@@ -1,10 +1,10 @@
 # Marp IFD theme
 
-Marp presentation IFD theme.
+IFD theme for Marp presentation.
 
-Inherited from default Marp theme, but added logos in header and added title page.
+The theme inherits from the default Marp theme, however logos have been added to the header, as well as a title page.
 
-Recommend to use vscode for editing.
+It is recommended that you use VScode for editing.
 
 ## Demo
 
