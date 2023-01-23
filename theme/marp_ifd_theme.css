@@ -1,16 +1,39 @@
 /* @theme marp_ifd_theme */
 @import 'default';
 
-section {
-  position: absolute;
+:root{
+  --section_padding_lr: 1.5em;
+  --section_padding-t: 3.5em;
+  --screen_width: 1280px;
+  font-size: 28px;
 }
+
+section {
+  display: block;
+  padding-left: var(--section_padding_lr);
+  padding-right: var(--section_padding_lr);
+  padding-top: var(--section_padding-t);
+}
+
+h2 {
+  color: #0047AB; /* cobalt blue */
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 0em;
+}
+
 
 section.title {
   display: flex;
   align-items: center;
 }
 
+
 section.title h1{
+  color: #191970; /* midnight blue */
   font-size: 2.2em;
 }
 
@@ -18,26 +41,29 @@ section.title h2{
   position: absolute;
   right: 30px;
   bottom: 150px;
+  border-bottom: none;
+  font-size: 1.3em;
 }
 
 header, footer {
   all: unset;
-  width: 100%;
+  width: var(--screen_width); /* by using this, disable IFD logo when we use image on the right hand side */
   position: absolute;
-  left: 0px;
-  color: var(--header-footer-color);
   font-size: 0.8em;
 }
 
 header .wrapper{
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 2em;
+  font-size: 0.3em;
 }
 
 header {
+  left: 0px;
   top: 21px;
 }
+
 
 footer {
   bottom: 21px;

@@ -17,12 +17,27 @@ theme: marp_ifd_theme
 
 ---
 
-# Test 2
+## This is a sub-title
 
-- test
-  - test 1
-  - test 2
+### This is a sub-sub-title
 
-1. test
-   - test
-2. test 2
+A normal paragraph
+
+- `ul` element
+  - `ul` element
+
+1. `ol` element
+2. `ol` element
+
+---
+
+## Insert an image
+
+- Metadata for Marp slide file
+  - `marp: true` enables Marp slide
+  - Image can be added using markdown syntax:
+    - e.g. The image on the right-hand-side is added by:
+    - `![bg right:50% 80%](./assets/markdown_meta.png)`
+
+
+![bg right:50% 80%](./assets/markdown_meta.png)

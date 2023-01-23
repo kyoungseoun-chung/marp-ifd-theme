@@ -12,4 +12,4 @@ Recommend to use vscode for editing.
 
 ## WIP
 
-- [ ] Currently, in `section`, contents are vertically centered. I want to align them to upper line.
+- [ ] Currently, image on the left-hand-side is not supported. May need separate `div` `class`.
