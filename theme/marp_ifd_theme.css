@@ -3,8 +3,9 @@
 
 :root{
   --section_padding_lr: 50px;
-  --section_padding-t: 70px;
+  --section_padding-t: 80px;
   --screen_width: 1280px;
+  --slide_width: calc(var(--screen_width) - calc(var(--slide-padding) * 2));
   --slide-padding: 20px;
   --paginate-color: #fff;
   --primary-color: #0047AB;
@@ -45,7 +46,6 @@ section::after {
 
 h2 {
   font-size: 1.6em;
-  padding: 0;
   background-image: linear-gradient(45deg, var(--light-color), var(--accent-color));
   background-clip: text;
   -webkit-background-clip: text;
@@ -66,7 +66,8 @@ section.title {
 
 section.title h1{
   color: var(--secondary-color);
-  font-size: 2.2em;
+  margin-top: 1em;
+  font-size: 2.4em;
   font-weight: 700;
 }
 
@@ -74,42 +75,31 @@ section.title h3{
   position: absolute;
   color: var(--neutral-color);
   right: 30px;
-  bottom: 150px;
+  bottom: 120px;
   border-bottom: none;
   font-size: 1.1em;
 }
 
 header, footer {
   all: unset;
-  width: var(--screen_width); /* by using this, disable IFD logo when we use image on the right hand side */
+  width: var(--slide_width); /* by using this, disable IFD logo when we use image on the right hand side */
   position: absolute;
-}
-
-header .wrapper{
   display: flex;
   justify-content: space-between;
-  padding: 0.5em;
-}
-
-header .wrapper .ifd-logo {
-  font-size: 0.7em;
-  font-weight: 600;
-}
-
-header .wrapper .eth-logo {
-  transform: scale(0.9);
+  color: var(--neutral-color);
 }
 
 header {
-  left: 0px;
-  top: 0px;
+  top: var(--slide-padding);
+  left: var(--slide-padding);
+  font-size: 0.7em;
+  font-weight: 600;
 }
 
 
 footer {
   font-size: 0.7em;
-  font-weight: 400;
-  color: var(--neutral-color);
   bottom: var(--slide-padding);
   left: var(--slide-padding);
+  font-weight: 400;
 }

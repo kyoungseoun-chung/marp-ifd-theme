@@ -4,7 +4,8 @@ title: Test marp slide
 author: Author
 paginate: true
 _paginate: false
-header: <div class="wrapper"><div class="eth-logo"><img src="./assets/eth_logo_kurz_pos.svg"></div><div class="ifd-logo">Institute of Fluid Dynamics</div>
+# header: <div class="wrapper"><div class="eth-logo"><img src="./assets/eth_logo_kurz_pos.svg"></div><div class="ifd-logo">Institute of Fluid Dynamics</div>
+header: ![w:150](./assets/eth_logo_kurz_pos.svg) Institute of Fluid Dynamics
 footer: Author
 theme: marp_ifd_theme
 ---
