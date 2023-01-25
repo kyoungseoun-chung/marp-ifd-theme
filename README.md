@@ -1,6 +1,6 @@
-# Marp IFD theme
+# Marp ETHZ-IFD theme
 
-IFD theme for Marp presentation.
+ETHZ-IFD theme for Marp presentation.
 
 The theme inherits from the default Marp theme, however logos have been added to the header, as well as a title page.
 
