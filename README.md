@@ -19,7 +19,7 @@ npm i @marp-team/marp-cli
 And run `marp-cli` using `-p` and `-s` flag to enable preview and server.
 
 ```bash
-marp-cli -p -s ./
+marp -p -s ./
 ```
 
 Alternatively, you can use VScode for preview and editing.
